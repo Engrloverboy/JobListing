@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-color: hsl(180deg, 52%, 96%);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image_bg {
+  background-image: url("https://images.unsplash.com/photo-1487528278747-ba99ed528ebc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80");
+  height: 20vh;
+  margin-bottom: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  background-color: white;
+  margin: 80px 0;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.logo_text img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  position: absolute;
+  top: -50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo_text h4 {
+  font-size: 25px;
+  margin: 15px 0;
+  color: hsl(180deg, 29%, 50%);
+}
+
+.logo_text h5 {
+  color: hsl(180deg, 14%, 20%);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.logo_text h5:hover {
+  color: hsl(180deg, 29%, 50%);
+}
+
+.logo_text h6 {
+  color: hsl(180deg, 8%, 52%);
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  border-bottom: 1px solid hsl(180deg, 8%, 52%);
+}
+
+.logo_text h6 .cart_left {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.logo_text h6 .cart_right {
+  margin-left: 10px;
+}
+
+.logo_text h6 .cart_top {
+  margin-right: 10px;
+}
+
+.logo_text h4 span {
+  font-size: 12px;
+  position: relative;
+  top: -6px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.new {
+  background-color: hsl(180deg, 29%, 50%);
+  color: white;
+}
+
+.feature {
+  color: white;
+  background-color: hsl(180deg, 14%, 20%);
+}
+
+.stacks {
+  margin-top: 20px;
+}
+
+.stacks li {
+  background-color: hsl(180deg, 31%, 95%);
+  color: hsl(180deg, 29%, 50%);
+  margin: 5px 0;
+  margin-right: 10px;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+.stacks li:hover {
+  color: white;
+  background-color: hsl(180deg, 29%, 50%);
+}
+
+@media (min-width: 800px) {
+  .logo_text img {
+    position: unset;
+    margin-right: 20px;
+  }
+  .logo_text {
+    display: flex;
+    align-items: center;
+  }
+  .logo_text h4 {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  .logo_text h4 span {
+    font-size: 8px;
+    margin: 0px 0px;
+  }
+  .logo_text h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .logo_text h6 {
+    font-size: 10px;
+    border-bottom: none;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  .stacks li {
+    margin: 5px 0;
+    margin-right: 5px;
+    padding: 5px 5px;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=styles.css.map */
