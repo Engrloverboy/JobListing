@@ -17,7 +17,7 @@ img {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
 }
 
 .image_bg {
@@ -29,12 +29,17 @@ img {
   background-size: cover;
 }
 
+.borders {
+  border-left: 5px solid hsl(180deg, 29%, 50%);
+  border-radius: 5px;
+}
+
 .wrapper {
   background-color: white;
   margin: 80px 0;
   padding: 30px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   position: relative;
 }
 
