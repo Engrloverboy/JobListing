@@ -1,9 +1,13 @@
-import img1 from "../image/account.svg"
-import img2 from "../image/manage.svg"
-import img3 from "../image/myhome.svg"
-import img4 from "../image/loop-studios.svg"
-import img5 from "../image/faceit.svg"
-
+import img1 from "../image/photosnap.svg";
+import img2 from "../image/account.svg";
+import img3 from "../image/manage.svg";
+import img4 from "../image/myhome.svg";
+import img5 from "../image/loop-studios.svg";
+import img6 from "../image/faceit.svg";
+import img7 from "../image/shortly.svg";
+import img8 from "../image/insure.svg";
+import img9 from "../image/eyecam-co.svg";
+import img10 from "../image/the-air-filter-company.svg";
 
 const allJobs = [
   {
@@ -80,8 +84,83 @@ const allJobs = [
     location: "Worldwide",
     languages: ["JavaScript"],
     tools: ["Ruby", "Sass"],
-  }
- 
+  },
+
+  {
+    id: 6,
+    company: "FaceIt",
+    logo: img6,
+    new: false,
+    featured: false,
+    position: "Junior Backend Developer",
+    role: "Backend",
+    level: "Junior",
+    postedAt: "2w ago",
+    contract: "Full Time",
+    location: "UK Only",
+    languages: ["Ruby"],
+    tools: ["RoR"],
+  },
+  {
+    id: 7,
+    company: "Shortly",
+    logo: img7,
+    new: false,
+    featured: false,
+    position: "Junior Developer",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "2w ago",
+    contract: "Full Time",
+    location: "Worldwide",
+    languages: ["HTML", "JavaScript"],
+    tools: ["Sass"],
+  },
+  {
+    id: 8,
+    company: "Insure",
+    logo: img8,
+    new: false,
+    featured: false,
+    position: "Junior Frontend Developer",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "2w ago",
+    contract: "Full Time",
+    location: "USA Only",
+    languages: ["JavaScript"],
+    tools: ["Vue", "Sass"],
+  },
+  {
+    id: 9,
+    company: "Eyecam Co.",
+    logo: img9,
+    new: false,
+    featured: false,
+    position: "Full Stack Engineer",
+    role: "Fullstack",
+    level: "Midweight",
+    postedAt: "3w ago",
+    contract: "Full Time",
+    location: "Worldwide",
+    languages: ["JavaScript", "Python"],
+    tools: ["Django"],
+  },
+  {
+    id: 10,
+    company: "The Air Filter Company",
+    logo: img10,
+    new: false,
+    featured: false,
+    position: "Front-end Dev",
+    role: "Frontend",
+    level: "Junior",
+    postedAt: "1mo ago",
+    contract: "Part Time",
+    location: "Worldwide",
+    languages: ["JavaScript"],
+    tools: ["React", "Sass"],
+  },
 ];
 
 export default allJobs;
