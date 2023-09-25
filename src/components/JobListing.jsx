@@ -1,35 +1,43 @@
 import React from "react";
 
-const JobListing = () => {
+const JobListing = (props) => {
+  var languages = ["HTML", "CSS", "JavaScript"];
+  const ThisJobIsNew = true;
+  const useBorder = "borders";
   return (
-    <section className="eachjob container">
-      <div className="wrapper">
-        <div className="logo_text">
-          <img
-            src="https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
-            alt=""
-          />
+    <section>
+      <section
+        className={`eachjob container ${props.ThisJobIsNew ? "borders" : ""}`}
+      >
+        <div className="wrapper">
+          <div className="logo_text">
+            <img
+              src={props.logo}
+              // src="https://images.unsplash.com/photo-1598257006626-48b0c252070d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80"
+              alt=""
+            />
 
-          <div>
-            <h4>
-              Netflix <span className="new">NEW!</span>{" "}
-              <span className="feature">FEATURED</span>
-            </h4>
-            <h5>Senior Frontend Developer</h5>
-            <h6>
-              <span className="cart_top">1 day</span> . <span className="cart_left">Full Time</span> .<span className="cart_right">USA only</span>
-            </h6>
+            <div>
+              <h4>
+                {props.company} <span className="new">NEW!</span>{" "}
+                <span className="feature">FEATURED</span>
+              </h4>
+              <h5>{props.role}</h5>
+              <h6>
+                <span className="cart_top">{props.postedDay}</span> .{" "}
+                <span className="cart_left">{props.type}</span> .
+                <span className="cart_right">{props.location}</span>
+              </h6>
+            </div>
           </div>
-        </div>
 
-        <ul className="stacks">
-          <li>Senior</li>
-          <li>HTML</li>
-          <li>Frontend</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-        </ul>
-      </div>
+          <ul className="stacks">
+            {props.languages.map((language, index) => (
+              <li>{language}</li>
+            ))}
+          </ul>
+        </div>
+      </section>
     </section>
   );
 };

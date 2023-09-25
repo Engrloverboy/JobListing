@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: hsl(180deg, 52%, 96%);
+  background-color: hsl(180, 52%, 96%);
 }
 
 img {
@@ -18,6 +18,10 @@ img {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.borders {
+  border-left: 10px solid black;
 }
 
 .image_bg {
@@ -44,31 +48,30 @@ img {
   border-radius: 50px;
   position: absolute;
   top: -50px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .logo_text h4 {
   font-size: 25px;
   margin: 15px 0;
-  color: hsl(180deg, 29%, 50%);
+  color: hsl(180, 29%, 50%);
 }
 
 .logo_text h5 {
-  color: hsl(180deg, 14%, 20%);
+  color: hsl(180, 14%, 20%);
   font-size: 30px;
   margin-bottom: 10px;
 }
 .logo_text h5:hover {
-  color: hsl(180deg, 29%, 50%);
+  color: hsl(180, 29%, 50%);
 }
 
 .logo_text h6 {
-  color: hsl(180deg, 8%, 52%);
+  color: hsl(180, 8%, 52%);
   font-size: 16px;
   font-weight: 500;
   padding-bottom: 10px;
-  border-bottom: 1px solid hsl(180deg, 8%, 52%);
+  border-bottom: 1px solid hsl(180, 8%, 52%);
 }
 
 .logo_text h6 .cart_left {
@@ -94,13 +97,13 @@ img {
 }
 
 .new {
-  background-color: hsl(180deg, 29%, 50%);
+  background-color: hsl(180, 29%, 50%);
   color: white;
 }
 
 .feature {
   color: white;
-  background-color: hsl(180deg, 14%, 20%);
+  background-color: hsl(180, 14%, 20%);
 }
 
 .stacks {
@@ -108,8 +111,8 @@ img {
 }
 
 .stacks li {
-  background-color: hsl(180deg, 31%, 95%);
-  color: hsl(180deg, 29%, 50%);
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
   margin: 5px 0;
   margin-right: 10px;
   padding: 5px 10px;
@@ -118,7 +121,7 @@ img {
 }
 .stacks li:hover {
   color: white;
-  background-color: hsl(180deg, 29%, 50%);
+  background-color: hsl(180, 29%, 50%);
 }
 
 @media (min-width: 800px) {
