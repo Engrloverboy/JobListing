@@ -150,6 +150,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    padding: 20px;
   }
   .stacks li {
     margin: 5px 0;
