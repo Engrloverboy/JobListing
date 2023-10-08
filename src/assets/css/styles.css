@@ -130,6 +130,10 @@ section {
   background-color: hsl(180deg, 29%, 50%);
 }
 
+input {
+  padding: 10px 30px;
+}
+
 @media (min-width: 800px) {
   .logo_text img {
     position: unset;

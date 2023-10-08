@@ -20,10 +20,16 @@ const JobListing = (props) => {
             <div>
               <h4>
                 {props.company}{" "}
-                <span className={`${props.TheNewJob ? "new" : " "}`}>NEW!</span>{" "}
-                <span className={`${props.TheFeaturedJob ? "feature" : " "}`}>
+                {props.ThisJobIsNew ? <span className="new">NEW!</span> : ""}
+                {props.TheFeaturedJob ? (
+                  <span className="feature">FEATURED</span>
+                ) : (
+                  ""
+                )}
+                {/* // <span className={`${props.TheNewJob ? "new" : " "}`}>NEW!</span>{" "} */}
+                {/* <span className={`${props.TheFeaturedJob ? "feature" : " "}`}>
                   FEATURED
-                </span>
+                </span> */}
               </h4>
               <h5>{props.role}</h5>
               <h6>

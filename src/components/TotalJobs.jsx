@@ -1,11 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import JobListing from "./JobListing";
 import allJobs from "../assets/json/allJobs";
 
 const TotalJobs = () => {
+  const [searchValue, setSearchValue] = useState("");
+
+  const FilteredJobs = allJobs.filter(
+    (job) =>
+      job.company.toLowerCase().includes(searchValue.toLowerCase()) ||
+      job.role.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
+  const handleSearchChange = (vendor) => {
+    setSearchValue(vendor.target.value);
+  };
   return (
     <div>
-      {allJobs.map((jobs, index) => (
+      <input
+        vlaue={searchValue}
+        type="text"
+        onChange={handleSearchChange}
+        placeholder="Search Jobs"
+      />
+      {FilteredJobs.map((jobs, index) => (
         <JobListing
           role={jobs.position}
           company={jobs.company}
