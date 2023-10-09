@@ -8,7 +8,7 @@ const TotalJobs = () => {
   const FilteredJobs = allJobs.filter(
     (job) =>
       job.company.toLowerCase().includes(searchValue.toLowerCase()) ||
-      job.role.toLowerCase().includes(searchValue.toLowerCase())
+      job.position.toLowerCase().includes(searchValue.toLowerCase())
   );
 
   const handleSearchChange = (vendor) => {
@@ -16,12 +16,16 @@ const TotalJobs = () => {
   };
   return (
     <div>
-      <input
-        vlaue={searchValue}
-        type="text"
-        onChange={handleSearchChange}
-        placeholder="Search Jobs"
-      />
+      <section>
+        <div className="search-input container">
+          <input
+            vlaue={searchValue}
+            type="text"
+            onChange={handleSearchChange}
+            placeholder="Search Jobs"
+          />
+        </div>
+      </section>
       {FilteredJobs.map((jobs, index) => (
         <JobListing
           role={jobs.position}
